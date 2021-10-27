@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration-line: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+html, body {
+    height: 100%;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Cookie', sans-serif;
+    font-weight: 400;
+    color: rgba(255,255,255,.9);
+    padding-top: 100px;
+}
+.items {
+    font-size: 20px;
+    margin: 5px auto 0 auto;
+    font-weight: normal;
+    max-width: 700px;
+    text-align: center;
+    color: rgba(255,255,255,.7);
+}
+.sign {
+    background: url("images/food-menu.jpg");
+    color: white;
+    padding-bottom: 30px;
+    background-size: cover;
+    height: 100%;
+}
+/*menu*/
+
+/*#portfolio-container {
+    height: 750px!important;
+}*/
+.list {
+    margin: 0 auto ;
+    background: #f2f2f2;
+    width: auto;
+    position: relative;
+}
+.list .galleryLinks {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    font-size: 16px;
+    width: auto;
+    font-weight: 500;
+    margin:0;
+    padding: 0;
+
+}
+.list > .galleryLinks > .cbp-filter-item{
+
+    flex-basis: 25%;
+    flex-grow: 1;
+    /*flex: 0 0 15;*/
+    /*width: 25%;*/
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-bottom: 0;
+    border-left: 0;
+    text-align: center;
+    position: relative;
+}
+.list .galleryLinks i {
+    display: block;
+    text-align: center;
+    font-size: .8rem;
+    /*margin-top: -10px;*/
+}
+.list .galleryLinks span {
+    height: 71px;
+    color: #444;
+    display: block;
+    position: relative;
+    padding: 22px 15px;
+    font-size: .8rem;
+
+}
+.list #galleryLinks .active {
+    background: #fff;
+    outline: none;
+}
+.list .galleryLinks span:hover {
+    cursor: pointer;
+}
+#food_menu .container .breakfast {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(75px,auto);
+    grid-gap: 40px 20px;
+    max-width: 600px;
+    padding-top: 25px;
+}
+
+#food_menu .container .dessert,
+#food_menu .container .pizza,
+#food_menu .container .salad   {
+    display: none;
+    padding-top: 25px;
+    margin: auto;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(75px,auto);
+    grid-gap: 40px 20px;
+    max-width: 600px;
+}
+#food_menu .container > div {
+    padding: 5px;
+}
+#food_menu .food-image {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+}
+.cbp-item {
+    position: static;
+}
+#food_menu .container .food-image a img {
+    border-radius: 0.25rem;
+}
+#food_menu #portfolio-container .cbp-item .food-image a::after{
+    opacity: 0;
+    width: 100%;
+    text-align: center;
+    vertical-align: -50px;
+    padding-top: 47px;
+    content: '';
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(231, 39, 45, 0.55) url("http://themes.semicolonweb.com/html/canvas/demos/restaurant/images/icons/basket.svg") center center no-repeat;
+    transition: opacity .3s ease;
+    border-radius: 0.25rem!important;
+}
+#food_menu #portfolio-container .cbp-item .food-image a:hover:after {
+    opacity: 1;
+}
+#food_menu .container > div > a:hover {
+    cursor: pointer;
+    /*background: rgba();*/
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+#food_menu .food-name > h4 {
+    margin-top: 8px;
+}
+.food-name a {
+    font-size: 16px;
+    text-decoration-line: none;
+    color: #666666;
+}
+.item-price {
+    font-size: 14px;
+    color: #333;
+    font-weight: 700;
+}
+/*/menu*/
+/*order*/
+
+#order .container-fluid {
+    background: url("images/food-pattern.png");
+    background-size: cover;
+}
+#order .sectiontitle {
+    text-align: center;
+    padding-top: 100px;
+}
+#order h2{
+    font-family: 'Cookie', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+}
+#order .subtitle {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #ff0000;
+}
+#order .flex-holder {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#order .flex-holder .box {
+    display: flex;
+    flex-flow: column wrap;
+    flex-basis: 45%;
+}
+#order h3 {
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 600;
+    font-size: .9rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 0 10px 15px;
+    margin: 0;
+}
+#order .box p {
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: #999;
+    line-height: 1.8rem;
+    padding: 0 15px;
+}
+#order .flex-holder .box .icon {
+    font-size: 2.5em;
+    padding: 30px 0 0 10px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+#order .footer {
+    background: #fff;
+}
+#order .footer span {
+    margin: 20px auto;
+    color: #444;
+    font-weight: 600;
+    line-height: 1.5;
+    display: block;
+    width: 100%;
+    text-align: center;
+
+}
+#order .footer button {
+    background: #eee;
+    color: #999;
+    border: none;
+    font-size: 18px;
+    text-transform: none;
+    display: block;
+    margin: 20px auto;
+}
+#order .footer button:hover {
+    background: #444;
+    color: #fff;
+}
+#order .footer button:after {
+    content: ' \279C';
+}
+/*/order*/
+/*Footer*/
+footer {
+    background: url("images/footer-bg.jpg") !important;
+    color: white;
+    height: 100px;
+    text-align: center;
+
+}
+footer .container {
+    padding-top: 40px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+
+
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: red;
+}
+/*/#Footer*/
+
+@media screen and (min-width: 1200px) {
+    .sign {
+        background: url("images/food-menu.jpg");
+        color: white;
+        padding-bottom: 30px;
+        background-size: cover;
+        height: 500px;
+    }
+    /*menu*/
+    .list {
+        margin: 0 auto ;
+        background: #f2f2f2;
+        max-width: 1140px;
+    }
+    .list .galleryLinks {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        font-size: 16px;
+        max-width: 1140px;
+        font-weight: 500;
+        margin: -72px 0 30px 0;
+        padding: 0;
+        background: #f2f2f2;
+    }
+    .list > .galleryLinks > .cbp-filter-item{
+        background: #f2f2f2;
+        flex-basis: 25%;
+        flex-grow: 1;
+        max-width: 100%;
+        border: 1px solid #ddd;
+        border-bottom: 0;
+        border-left: 0;
+        text-align: center;
+    }
+    .list .galleryLinks span {
+        height: 71px;
+        display: block;
+        position: relative;
+        padding: 25px 30px;
+    }
+    .list .galleryLinks i {
+        margin: -10px 10px 0 0;
+        font-size: 1.1rem;
+        display: inline;
+
+        /*position: absolute;
+        top: 30px;
+        left: 30px;*/
+    }
+    #food_menu .container .breakfast  {
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        max-width: 1140px;
+        margin: auto;
+        grid-gap: 40px 20px;
+    }
+    #food_menu .container .salad,
+    #food_menu .container .pizza,
+    #food_menu .container .dessert {
+        display: none;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        max-width: 1140px;
+        margin: auto;
+        grid-gap: 40px 20px;
+    }
+    #food_menu .container > div {
+        padding: 15px;
+
+    }
+    /*/menu*/
+    /*order*/
+    #order .flex-holder {
+        flex-flow: row wrap;
+        justify-content: space-around;
+
+    }
+    #order .flex-holder .box {
+        flex-basis: 33%;
+    }
+    #order .flex-holder .box .icon {
+        font-size: 2.5em;
+        padding: 30px 0 0 15px;
+        font-weight: normal;
+    }
+    #order .footer {
+        display: block;
+        text-align: center;
+        padding: 35px;
+        margin: 50px auto;
+    }
+    /*/order*/
+    footer {
+        background: url("images/footer-bg.jpg");
+    }
+    footer > .container {
+        width: 100%;
+        height: 100px;
+        text-align:center;
+    }
+}
+@media screen and (min-width: 640px) and (max-width: 1199px) {
+    /*menu*/
+    .list {
+        margin: 0 70px ;
+        background: #f2f2f2;
+        max-width: 1140px;
+    }
+    .list .galleryLinks {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        font-size: 16px;
+        max-width: 1140px;
+        font-weight: 500;
+        margin: 0;
+        padding: 0;
+    }
+    .list #galleryLinks .active {
+        background: #fff;
+        outline: none;
+    }
+    .list > .galleryLinks > .cbp-filter-item{
+        background: #f2f2f2;
+        flex-basis: 25%;
+        flex-grow: 1;
+        max-width: 100%;
+        border: 1px solid #ddd;
+        border-bottom: 0;
+        border-left: 0;
+        text-align: center;
+    }
+    .list .galleryLinks span {
+        height: 71px;
+        background:#f2f2f2;
+        display: block;
+        position: relative;
+        padding: 25px 40px;
+
+    }
+
+    #food_menu .container .breakfast {
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        margin: auto;
+        padding: 10px;
+        grid-gap: 40px 20px;
+    }
+    #food_menu .container .salad,
+    #food_menu .container .pizza,
+    #food_menu .container .dessert {
+        display: none;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1140px;
+        margin: auto;
+        grid-gap: 40px 20px;
+    }
+    #food_menu .container > div {
+        padding: 15px;
+    }
+    /*/menu*/
+    /*order*/
+    #order .flex-holder {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    #order .flex-holder .box {
+        flex-basis: 45%;
+    }
+    #order .flex-holder .box .icon {
+        font-size: 2.5em;
+        padding: 30px 0 0 15px;
+        font-weight: normal;
+    }
+    #order .footer {
+        display: block;
+        text-align: center;
+        padding: 35px;
+        margin: 50px auto;
+        width: 100%;
+    }
+    #order .footer span {
+        display: inline;
+    }
+    #order .footer button {
+        display: inline;
+    }
+    /*/order*/
+
+}

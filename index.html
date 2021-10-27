@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/app.js" defer></script>
+    <title>Menu</title>
+</head>
+<body>
+
+<header>
+    <nav id="menu" class="container-fluid">
+        <ul class="mainmenu">
+            <li>
+                <ul class="mainmenu-1">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html ">Gallery</a></li>
+                </ul>
+            </li>
+            <li class="logo"><a class="logo" href=""><img src="images/logo.png" alt="logo"></a></li>
+            <li>
+                <ul class="mainmenu-2">
+                    <li><a href="menu.html" target="_blank">Menu</a></li>
+                    <li><a href="index.html">Reservation</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </li>
+
+            <li id="menuToggle" onclick="menuToggle()"><i class="fas fa-bars"></i></li>
+        </ul>
+    </nav>
+</header>
+<div class="container-fluid sign">
+    <h1>Menu</h1>
+    <div class="items">Choose items from Our Menu</div>
+</div>
+
+<section id="food_menu" class="menu">     <!--tabbled css-->
+    <div class="wrapper">
+        <div class="list">
+            <div id="galleryLinks" class="galleryLinks wow fadeInUp">
+                <div  data-filter="* .breakfast-item" class="cbp-filter-item  active" onclick="openBreakfast('breakfast')"><span ><i class="fas fa-croissant"></i>Breakfast</span></div>
+                <div data-filter=".salad-item" class="cbp-filter-item " onclick="openSalad('salad')"><span><i class="fas fa-salad"></i> Salad</span></div>
+                <div data-filter=".pizza-item" class="cbp-filter-item " onclick="openPizza('pizza')"><span><i class="fad fa-pizza-slice"></i> Pizza</span></div>
+                <div data-filter=".dessert-item" class="cbp-filter-item " onclick="openDessert('dessert')"><span><i class="fas fa-pie"></i> Dessert</span></div>
+            </div>
+        </div>
+        <div id="portfolio-container" class="container">
+            <div id="breakfast" class="breakfast food_item">
+                <div class="cbp-item breakfast-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/br-1.jpg" alt="Banana pancake"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Banana pancake</a></h4>
+                        <div class="item-price">$ 19.49</div>
+                    </div>
+                </div>
+                <div class="cbp-item breakfast-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/br-2.jpg" alt="raisins croissant"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Raisins croissant</a></h4>
+                        <div class="item-price">$ 11.99</div>
+                    </div>
+                </div>
+                <div class="cbp-item breakfast-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/br-3.jpg" alt="omlette"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Healthy omlette</a></h4>
+                        <div class="item-price">$ 8.00</div>
+                    </div>
+                </div>
+                <div class="cbp-item breakfast-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/br-4.jpg" alt="fired eggs"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Fried Eggs with bread</a></h4>
+                        <div class="item-price">$ 13.19</div>
+                    </div>
+                </div>
+                <div class="cbp-item breakfast-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/br-5.jpg" alt="cheese croissant"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Cheese croissant</a></h4>
+                        <div class="item-price">$ 7.49</div>
+                    </div>
+                </div>
+                <div class="cbp-item breakfast-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/br-6.jpg" alt="croissant and coffee"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Croissant and coffee</a></h4>
+                        <div class="item-price">$ 11.99</div>
+                    </div>
+                </div>
+                <div class="cbp-item breakfast-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/br-7.jpg" alt="blueberries waffle"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Blueberries waffle</a></h4>
+                        <div class="item-price">$ 29.00</div>
+                    </div>
+                </div>
+                <div class="cbp-item breakfast-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/br-8.jpg" alt="fried eggs with bean"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Fried Eggs with beans</a></h4>
+                        <div class="item-price">$ 5.49</div>
+                    </div>
+                </div>
+            </div>
+            <div id="salad" class="salad food_item">
+                <div class="salad-item cbp-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/sl-1.jpg" alt="Pomegranate salad"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Pomegranate salad</a></h4>
+                        <div class="item-price">$ 19.49</div>
+                    </div>
+                </div>
+                <div class="salad-item cbp-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/sl-2.jpg" alt="Greece salad"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Greece salad</a></h4>
+                        <div class="item-price">$ 11.49</div>
+                    </div>
+                </div>
+                <div class="salad-item cbp-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/sl-3.jpg" alt="fruit lover"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Fruit lover</a></h4>
+                        <div class="item-price">$ 8.00</div>
+                    </div>
+                </div>
+                <div class="salad-item cbp-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/sl-4.jpg" alt="egg salad"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Egg salad</a></h4>
+                        <div class="item-price">$ 13.19</div>
+                    </div>
+                </div>
+                <div class="salad-item cbp-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/sl-5.jpg" alt="Mushroom & avocado"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Mushroom & avocado</a></h4>
+                        <div class="item-price">$ 7.49</div>
+                    </div>
+                </div>
+                <div class="salad-item cbp-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/sl-6.jpg" alt="Ceaser salad"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Ceaser salad</a></h4>
+                        <div class="item-price">$ 11.99</div>
+                    </div>
+                </div>
+                <div class="salad-item cbp-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/sl-7.jpg" alt="Thai salad"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Thai salad</a></h4>
+                        <div class="item-price">$ 29.49</div>
+                    </div>
+                </div>
+                <div class="salad-item cbp-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/sl-8.jpg" alt="supreme veggie"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Supreme veggie</a></h4>
+                        <div class="item-price">$ 5.49</div>
+                    </div>
+                </div>
+            </div>
+            <div id="pizza" class="pizza food_item">
+                <div class="cbp-item pizza-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/pz-1.jpg" alt="pizza"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Pizza Tomatino</a></h4>
+                        <div class="item-price">$ 19.49</div>
+                    </div>
+                </div>
+                <div class="cbp-item pizza-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/pz-2.jpg" alt="pizza"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Pizza margerita </a></h4>
+                        <div class="item-price">$ 12.49</div>
+                    </div>
+                </div>
+                <div class="cbp-item pizza-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/pz-3.jpg" alt="pizza"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Greasy Italian</a></h4>
+                        <div class="item-price">$ 17.00</div>
+                    </div>
+                </div>
+                <div class="cbp-item pizza-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/pz-4.jpg" alt="pizza"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Deluxe Veggie</a></h4>
+                        <div class="item-price">$ 22.49</div>
+                    </div>
+                </div>
+                <div class="cbp-item pizza-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/pz-5.jpg" alt="pizza"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Pizza Rustica</a></h4>
+                        <div class="item-price">$ 17.49</div>
+                    </div>
+                </div>
+                <div class="cbp-item pizza-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/pz-6.jpg" alt="pizza"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Pizza Bianca</a></h4>
+                        <div class="item-price">$ 21.49</div>
+                    </div>
+                </div>
+                <div class="cbp-item pizza-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/pz-7.jpg" alt="pizza"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Pizza Quattro</a></h4>
+                        <div class="item-price">$ 11.49</div>
+                    </div>
+                </div>
+                <div class="cbp-item pizza-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/pz-8.jpg" alt="pizza"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Pizza Roma</a></h4>
+                        <div class="item-price">$ 15.49</div>
+                    </div>
+                </div>
+            </div>
+            <div id="dessert" class="dessert food_item">
+                <div class="cbp-item dessert-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/d-1.jpg" alt="dessert"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Choclate fudge</a></h4>
+                        <div class="item-price">$ 19.49</div>
+                    </div>
+                </div>
+                <div class="cbp-item dessert-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/d-2.jpg" alt="dessert"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Blueberry cake</a></h4>
+                        <div class="item-price">$ 11.49</div>
+                    </div>
+                </div>
+                <div class="cbp-item dessert-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/d-3.jpg" alt="dessert"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Truffle coffee</a></h4>
+                        <div class="item-price">$ 8.49</div>
+                    </div>
+                </div>
+                <div class="cbp-item dessert-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/d-4.jpg" alt="dessert"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Strawberry velvet</a></h4>
+                        <div class="item-price">$ 13.49</div>
+                    </div>
+                </div>
+                <div class="cbp-item dessert-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/d-5.jpg" alt="dessert"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Delicious Blueberry</a></h4>
+                        <div class="item-price">$ 7.49</div>
+                    </div>
+                </div>
+                <div class="cbp-item dessert-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/d-6.jpg" alt="dessert"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#"></a>Herbs & pomegranate</h4>
+                        <div class="item-price">$ 11.49</div>
+                    </div>
+                </div>
+                <div class="cbp-item dessert-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/d-7.jpg" alt="dessert"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Chocolate & raspberry tart</a></h4>
+                        <div class="item-price">$ 5.49</div>
+                    </div>
+                </div>
+                <div class="cbp-item dessert-item">
+                    <div class="food-image">
+                        <a href="#"><img src="images/food/d-8.jpg" alt="dessert"></a>
+                    </div>
+                    <div class="food-name">
+                        <h4><a href="#">Fruits cake</a></h4>
+                        <div class="item-price">$ 28.49</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="order">
+    <div class="container-fluid">
+        <div class="sectiontitle">
+            <span class="subtitle">Step of order</span>
+            <h2>How do you get your food</h2>
+        </div>
+        <div class="flex-holder">
+            <div class="box"><span class="icon"><i class="fal fa-route"></i></span>
+                <h3>1. Select your location</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus fugit nesciunt obcaecati tenetur.</p>
+            </div>
+            <div class="box"><span class="icon"><i class="fal fa-store"></i></span>
+                <h3>2. Choose your food</h3>
+                <p>A distinctio dolores eum iure minima nam nobis numquam placeat quibusdam velit, vero.</p>
+            </div>
+            <div class="box"><span class="icon"><i class="fal fa-truck-moving"></i></span>
+                <h3>3. Your item is ont the way</h3>
+                <p>Adipisci, aperiam dolore dolorum eligendi, esse numquam officiis quaerat rem repudiandae, tenetur
+                    veniam?</p>
+            </div>
+        </div>
+        <div class="container-fluid footer">
+            <span>Get $30 on your first order</span>
+            <button class="order-now">Order now</button>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        Webszerkesztés tanfolyam &copy; 2020 | Ruander oktatóközpont | <a href="http://themes.semicolonweb.com/html/canvas/demo-restaurant-menu.html#" target="_blank">Eredeti oldal.</a>
+        <a href="#" class="to-top">Vissza a lap tetejére</a></div>
+</footer>
+
+
+</body>
+</html>
